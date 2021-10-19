@@ -9,7 +9,7 @@ const reader = readline.createInterface({
 let validated = false
 let attemptCount = 0;
 
-//Creating and IIFE to allow us to use async/await on the global level of our file
+//Creating and IIFE to allow us to use async/await on the global scope of our file
 (async () => {
     while (!validated && attemptCount < 5) {
         //Counting each user attempt
